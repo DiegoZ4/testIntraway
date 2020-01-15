@@ -24,13 +24,19 @@ export class ThreeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.players = this._playersService.getPlayers();
+    // this.players = this._playersService.getPlayers();
+    this._playersService.getPlayers().subscribe( (response) =>{
+      this.players = response;
+    })
     console.log(this.players);
   }
 
   buscarPlayer(){
     console.log(this.playerSearch)
-    this.players = this._playersService.searchPlayers(this.playerSearch);
+    // this.players = this._playersService.searchPlayers(this.playerSearch);
+    this._playersService.searchPlayers(this.playerSearch).subscribe( (response) =>{
+      this.players = response;
+    })
   }
 
 }

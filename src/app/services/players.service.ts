@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Rx';
 
 //Traer modelo
 import { Player } from '../models/player';
@@ -15,7 +16,9 @@ export class PlayersService {
   }
 
   getPlayers(){
-    return dataJSON;
+    return new Observable<Player[]>((observer) => {
+                return observer.next(dataJSON);
+            });
   }
 
   searchPlayers( termino ){
@@ -33,7 +36,9 @@ export class PlayersService {
       }
     }
 
-    return playerArr;
+    return new Observable<Player[]>((observer) => {
+                return observer.next(playerArr);
+            });
   }
 
 }
