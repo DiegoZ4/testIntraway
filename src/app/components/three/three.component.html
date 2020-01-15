@@ -1,0 +1,30 @@
+<h2>Componente #3 - La Busqueda</h2>
+
+<hr>
+
+<div class="form-group pt-4">
+  <div class="form-group">
+    <label for="exampleInputPassword1">Buscar un jugador</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" (keyup)="buscarPlayer()"
+           [(ngModel)]="playerSearch" placeholder="Escribe nombre o apellido">
+  </div>
+</div>
+
+<hr>
+
+<div class="row row-cols-1 row-cols-md-3 pb-5">
+  <div class="col mb-4" *ngFor="let player of players">
+    <div class="card">
+      <img src="/assets/img/{{ player.image }}" class="card-img-top" alt="...">
+      <div class="card-body pb-0">
+        <h5 class="card-title"> <b>{{ player.name }}</b></h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item team">Equipo: {{ player.team }}</li>
+        <li class="list-group-item">Edad: {{ player.age }}</li>
+        <li class="list-group-item">Nacionalidad: {{ player.country }}</li>
+        <li class="list-group-item">Posición: {{ player.position }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

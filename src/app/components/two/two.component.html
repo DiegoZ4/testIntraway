@@ -1,0 +1,22 @@
+<h2>Componente #2 - La Tabla</h2>
+
+<hr>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Equipo</th>
+      <th scope="col">País</th>
+      <th scope="col">Puntaje</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let team of teams">
+      <th scope="row">{{ team.ID }}</th>
+      <td> {{ team.Name }}</td>
+      <td>{{ team.Type }}</td>
+      <td>{{ team.Value }}</td>
+    </tr>
+  </tbody>
+</table>

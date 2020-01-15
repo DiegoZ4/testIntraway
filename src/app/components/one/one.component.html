@@ -1,0 +1,17 @@
+<h2>Componente #1 - La Bienvenida</h2>
+
+<hr>
+
+<div class="form-group pt-4">
+  <div class="form-group">
+    <label for="exampleInputPassword1">¡Recibir una calidad bienvenida!</label>
+    <input type="text" class="form-control" id="exampleInputPassword1"
+           [(ngModel)]="name" placeholder="Escribe tu nombre">
+  </div>
+  <button type="submit" class="btn btn-primary"
+          (click)="toWelcome()" [disabled]="!name">Recibir bienvenida</button>
+</div>
+
+<hr *ngIf="isName">
+
+<app-one-child [name]="name" *ngIf="isName"></app-one-child>

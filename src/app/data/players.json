@@ -1,0 +1,66 @@
+[
+  {
+  "name": "Lionel Messi",
+  "team": "Barcelona FC",
+  "image": "messi.jpg",
+  "age": 32,
+  "country": "Argentina",
+  "position": "Delantero"
+  },
+  {
+    "name": "Ángel Di Maria",
+    "team": "Paris Sain Germain",
+    "image": "dimaria.jpg",
+    "age": 31,
+    "country": "Argentina",
+    "position": "Volante"
+  },
+  {
+    "name": "Neymar",
+    "team": "Paris Sain Germain",
+    "image": "neymar.jpg",
+    "age": 27,
+    "country": "Brasil",
+    "position": "Delantero"
+  },
+  {
+    "name": "Lucas Pratto",
+    "team": "River Plate",
+    "image": "pratto.jpg",
+    "age": 31,
+    "country": "Argentina",
+    "position": "Delantero"
+  },
+  {
+    "name": "Luis Suarez",
+    "team": "Barcelona FC",
+    "image": "suarez.jpg",
+    "age": 32,
+    "country": "Uruguay",
+    "position": "Delantero"
+  },
+  {
+    "name": "Cristiano Ronaldo",
+    "team": "Juventus",
+    "image": "cristiano.jpg",
+    "age": 34,
+    "country": "Portugal",
+    "position": "Delantero"
+  },
+  {
+    "name": "Carlos Tevez",
+    "team": "Boca Juniors",
+    "image": "tevez.jpg",
+    "age": 35,
+    "country": "Argentina",
+    "position": "Delantero"
+  },
+  {
+    "name": "Mbappe",
+    "team": "Paris Saint Germain",
+    "image": "mbappe.jpg",
+    "age": 21,
+    "country": "Francia",
+    "position": "Delantero"
+  }
+]
